@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayWise - Employee Payroll Management</title>
+    <link rel="icon" type="" href="logo1.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+         <div class="logo-container">
+            <img src="logo.png" alt="PayWise Logo" class="logo">
+        </div>
+        <h1>PayWise</h1>
+        <h2>Employee Payroll Management</h2>
+        <div class="form-section">
+            <input type="text" id="employeeName" placeholder="Employee Name">
+            <input type="number" id="employeeSalary" placeholder="Salary">
+            <input type="number" id="allowances" placeholder="Allowances">
+            <input type="number" id="deductions" placeholder="Deductions">
+            <input type="number" id="loans" placeholder="Loans">
+            <input type="number" id="savings" placeholder="Savings">
+            <input type="number" id="arrears" placeholder="Arrears">
+            <button id="addEmployeeButton">Add Employee</button>
+        </div>
+        <h3>Employee List</h3>
+        <div class="employee-list">
+            
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Allowances</th>
+                        <th>Deductions</th>
+                        <th>Loans</th>
+                        <th>Savings</th>
+                        <th>Arrears</th>
+                        <th>Net Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employees will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <div class="summary">
+            <p>Total Employees: <span id="totalEmployees">0</span></p>
+            <p>Total Payroll: $<span id="totalPayroll">0</span></p>
+            <button id="generateReportButton">Generate Reports</button>
+        </div>
+        <footer>
+            <p>Made by Latha Guard</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
